@@ -1,8 +1,7 @@
-public class ServiceAwesomeDecorator implements Service {
-    private Service service;
+public class ServiceAwesomeDecorator extends BaseServiceDecorator {
 
     public ServiceAwesomeDecorator(Service service) {
-        this.service = service;
+        super(service);
     }
 
     public void doSomething() {
